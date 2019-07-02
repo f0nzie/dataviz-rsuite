@@ -1,2 +1,17 @@
 *
 !.gitignore
+!dataviz.Rproj
+!.Rprofile
+!LICENSE
+!_common.R
+!cover.png
+!*.Rmd
+!*.bib
+!*.yml
+!*.sh
+!animations/*
+!css/*
+!images/*
+!tools/*
+!figures/*
+!html_includes/*

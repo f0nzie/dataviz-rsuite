@@ -1,0 +1,10 @@
+Package: dataviz.pkgs
+Type: Package
+Title: What the package does (short line)
+Version: 0.1
+Date: 2019-06-28
+Author: msfz751
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: What license is it under?
+Imports: logging

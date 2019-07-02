@@ -1,8 +1,9 @@
-lib_path <- file.path("..", "libs")
-sbox_path <- file.path("..", "sbox")
+ace_rsuite <- find_rsuite_root()
+lib_path  <- file.path(ace_rsuite, "libs")
+sbox_path <- file.path(ace_rsuite, "sbox")
 if (!file.exists(lib_path)) {
-  lib_path <- file.path("..", "deployment", "libs")
-  sbox_path <- file.path("..", "deployment", "sbox")
+  lib_path <- file.path(find_rsuite_root(), "deployment", "libs")
+  sbox_path <- file.path(find_rsuite_root(), "deployment", "sbox")
 }
 
 if (!dir.exists(sbox_path)) {
@@ -18,7 +19,7 @@ logging::addHandler(logging::writeToConsole, level = "FINEST")
 
 log_fpath <- (function() {
   log_file <- gsub("-", "_", sprintf("%s.log", Sys.Date()))
-  log_dir <- normalizePath(file.path("..", "logs"))
+  log_dir <- normalizePath(file.path(find_rsuite_root(), "logs"))
   fpath <- file.path(log_dir, log_file)
   if (file.exists(fpath) && file.access(fpath, 2) == -1) {
     fpath <- paste0(fpath, ".", Sys.info()[["user"]])
@@ -26,7 +27,7 @@ log_fpath <- (function() {
   return(fpath)
 })()
 
-log_dir <- normalizePath(file.path("..", "logs"))
+log_dir <- normalizePath(file.path(find_rsuite_root(), "logs"))
 if (dir.exists(log_dir)) {
   logging::addHandler(logging::writeToFile, level = "FINEST", file = log_fpath)
 }
@@ -34,22 +35,22 @@ if (dir.exists(log_dir)) {
 script_path <- getwd()
 
 args_parser <- function() {
-    args <- commandArgs(trailingOnly = FALSE)
-    list(
-        get = function(name, required = TRUE,  default = NULL) {
-            prefix <- sprintf("--%s=", name)
-            value <- sub(prefix, "", args[grep(prefix, args)])
+  args <- commandArgs(trailingOnly = FALSE)
+  list(
+    get = function(name, required = TRUE,  default = NULL) {
+      prefix <- sprintf("--%s=", name)
+      value <- sub(prefix, "", args[grep(prefix, args)])
 
-            if (length(value) != 1 || is.null(value)) {
-                if (required) {
-                    logerror("--%s parameter is required", name)
-                    stop(1)
-                }
-                return(default)
-            }
-            return(value)
+      if (length(value) != 1 || is.null(value)) {
+        if (required) {
+          logerror("--%s parameter is required", name)
+          stop(1)
         }
-    )
+        return(default)
+      }
+      return(value)
+    }
+  )
 }
 
 load_config <- function() {

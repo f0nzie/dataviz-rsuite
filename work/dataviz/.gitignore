@@ -15,4 +15,4 @@
 !tools/*
 !figures/*
 !html_includes/*
-!_book_final/*
+!_book_final/**

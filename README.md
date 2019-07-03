@@ -85,6 +85,7 @@ Or this:
 dataviz-rsuite$  Rscript R/build_draft.R
 ```
 
+* Open the file `index.html` from the folder `work/dataviz/_book_final` or `work/dataviz/_book`.
 
 
 ## References

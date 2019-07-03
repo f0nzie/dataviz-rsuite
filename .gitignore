@@ -4,3 +4,14 @@
 .Rbuildignore
 .Ruserdata
 config.txt
+
+work/dataviz/_main\.Rmd
+
+
+packages/dviz\.supp
+
+packages/ggtextures
+
+packages/patchwork
+
+packages/statebins

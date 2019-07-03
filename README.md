@@ -1,11 +1,11 @@
 # dataviz-rsuite
 
 
-## ebook built with rsuite. How is this different
-This ebook was created with `bookdown` by its author [Claus Wilke]() . The version here is different in the way it has been built, and can be rebuilt, even from the bare metal.
+## ebook built with `rsuite`. How is this different
+This bookdown ebook [**Fundamentals of Data Visualization**](https://www.amazon.com/gp/product/1492031089) was originally created with `bookdown` by its author [Claus Wilke](@ClausWilke). The version here is different in the way it has been built, and can be rebuilt, even from the bare metal.
 
-I have used `rsuite` to make it fully reproducible and easier to knit. This ebook is, in some way, difficult to match or keep all the dependencies. Some package will not be found in [CRAN](), or have newer versions in Github.
-Unfortunately, since not all good things last forever, after a package upgrade the ebook may stop building. These are all the packages required to build this ebook:
+I have used `rsuite` to make it fully reproducible and easier to knit. This ebook is, in some way, difficult to match or keep all the dependencies. Some packages will not be found in [CRAN](), or have newer versions in Github. To save all the package installation in the R global environment, I have chosen to create the book in an isolated environment with rsuite.
+Besides, since not all good things last forever, after a package upgrade the ebook may stop building. These are all the packages required to build this ebook:
 
 ```
   logging,
@@ -54,7 +54,7 @@ Unfortunately, since not all good things last forever, after a package upgrade t
 
 ## How is it done
 
-So, what I did is creating an isolated [rsuite]() master project for the book, one where all the packages are spelled out in advance so the ebook can be rebuilt after: (i) an R re-installation, (ii) a new R version, or (iii) a full package upgrade. The book will be able to be regenerated to the CRAN snapshot at the date it was first succesfully built.
+So, what I did is creating an isolated [rsuite]((https://rsuite.io/)) master project for the book, one where all the packages are spelled out in advance so the ebook can be rebuilt after: (i) an R re-installation, (ii) a new R version, or (iii) a full package upgrade. The book will be able to be regenerated to the CRAN snapshot at the date it was first succesfully built.
 
 Because `rsuite` allows a supervising project on top of other projects or packages, you can control the:
 
@@ -70,27 +70,27 @@ Because `rsuite` allows a supervising project on top of other projects or packag
 ## How to reproduce this ebook yourself
 * Download and install the [RSuite](https://rsuite.io/) client. Available for Linux, Mac and Windows.
 * Install the rsuite package with `rsuite install`
-* Clone or download this repository.
+* Clone or download the ebook [repository](https://github.com/f0nzie/dataviz-rsuite)
 * Change to this repo folder and install the dependencies on its own isolated reproducible environment. Use `rsuite proj depsinst`
 * Build the project with `rsuite proj build`
-* Go to the folder `/work/book`, or where the bookdown lives, and open the `.Rproj` project.
-* Click on the RStudio **Build Book** button.
-* Enjoy
-
-
-## Publishing this book in Github pages
-To publish this book in Github pages, push the folder `./work/book/public` as a branch `gh-pages` with this git command:
+* In the terminal type this:
 
 ```
-git subtree push --prefix work/book/public https://github.com/f0nzie/interopretable_ml-rsuite.git gh-pages
+dataviz-rsuite$  Rscript R/build_final.R
 ```
 
-If you are building this in your own machine and own repository, change my username `f0nzie` by your own. This example assumes you are using `https` instead of `ssh`. Do not forget to activate `gh-pages` in *Settings, GitHub Pages*.
+Or this:
+
+```
+dataviz-rsuite$  Rscript R/build_draft.R
+```
+
 
 
 ## References
-* [Original repository](https://github.com/christophM/interpretable-ml-book)
-* [Online ebook](https://christophm.github.io/interpretable-ml-book/)
-* [Author's website](https://christophm.github.io/)
+* [Original repository](https://github.com/clauswilke/dataviz)
+* [Online ebook](http://serialmentor.com/dataviz)
+* [Author's website](https://serialmentor.com/blog/)
 * [Bookdown website](https://bookdown.org/)
 * [RSuite](https://rsuite.io/)
+* [CRAN]()

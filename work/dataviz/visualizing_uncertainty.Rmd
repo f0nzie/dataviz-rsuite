@@ -491,8 +491,10 @@ ggplot(CI_df, aes(estimate, type)) +
     axis.ticks.x = element_line(color = "black"),
     axis.title.x = element_text(hjust = 1)
   )
-
 ```
+
+
+
 
 
 ```{block type='rmdtip', echo=TRUE}

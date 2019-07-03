@@ -48,5 +48,6 @@ Imports: logging,
   lwgeom,
   rstanarm,
   gifski,
-  transformr
+  transformr,
+  purrr
 RoxygenNote: 6.1.1

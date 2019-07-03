@@ -457,6 +457,23 @@ $(document).ready(function () {
 <li>Open the file <code>index.html</code> from the folder <code>work/dataviz/_book_final</code> or <code>work/dataviz/_book</code>.</li>
 </ul>
 </div>
+<div id="publishing-this-book-in-github-pages" class="section level2">
+<h2>Publishing this book in Github pages</h2>
+<p>To publish this book in Github pages:</p>
+<ol style="list-style-type: decimal">
+<li>Push the folder <code>./work/dataviz/_book_final</code> as the branch <code>gh-pages</code> with this <code>git</code> command from your terminal:</li>
+</ol>
+<pre><code>git subtree push --prefix work/dataviz/_book_final https://github.com/f0nzie/dataviz-rsuite.git gh-pages</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Activate <code>gh-pages</code> in your Github repository.</li>
+</ol>
+<blockquote>
+<p>If you are building this in your own machine and own repository, change my username <code>f0nzie</code> by your own. This example assumes you are using <code>https</code> instead of <code>ssh</code>.</p>
+</blockquote>
+<ol start="3" style="list-style-type: decimal">
+<li>Call this version of the book website from: <a href="https://f0nzie.github.io/dataviz-rsuite/">https://f0nzie.github.io/dataviz-rsuite/</a></li>
+</ol>
+</div>
 <div id="references" class="section level2">
 <h2>References</h2>
 <ul>

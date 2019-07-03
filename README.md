@@ -88,6 +88,22 @@ dataviz-rsuite$  Rscript R/build_draft.R
 * Open the file `index.html` from the folder `work/dataviz/_book_final` or `work/dataviz/_book`.
 
 
+## Publishing this book in Github pages
+To publish this book in Github pages:
+
+1. Push the folder `./work/dataviz/_book_final` as the branch `gh-pages` with this `git` command from your terminal:
+
+```
+git subtree push --prefix work/dataviz/_book_final https://github.com/f0nzie/dataviz-rsuite.git gh-pages
+```
+
+2. Activate `gh-pages` in your Github repository.
+
+> If you are building this in your own machine and own repository, change my username `f0nzie` by your own. This example assumes you are using `https` instead of `ssh`. 
+
+3. Call this version of the book website from: [https://f0nzie.github.io/dataviz-rsuite/](https://f0nzie.github.io/dataviz-rsuite/)
+
+
 ## References
 * [Original repository](https://github.com/clauswilke/dataviz)
 * [Online ebook](http://serialmentor.com/dataviz)

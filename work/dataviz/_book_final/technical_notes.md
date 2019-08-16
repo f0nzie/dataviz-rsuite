@@ -11,7 +11,7 @@ The book was last compiled using the following environment:
 ```
 ## R version 3.6.0 (2019-04-26)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
-## Running under: Ubuntu 18.04.2 LTS
+## Running under: Ubuntu 18.04.3 LTS
 ## 
 ## Matrix products: default
 ## BLAS:   /opt/R/3.6.0/lib/R/lib/libRblas.so

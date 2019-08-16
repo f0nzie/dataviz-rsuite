@@ -93,7 +93,7 @@ The general strategy we can employ is called *direct labeling*, whereby we place
 
 
 <div class="rmdtip">
-<p>Whenever possible, design your figures so they don’t need a legend.</p>
+<p>Whenever possible, design your figures so they don't need a legend.</p>
 </div>
 
 We can also apply the direct labeling concept to the iris data from the beginning of this chapter, specifically Figure \@ref(fig:iris-scatter-three-shapes). Because it is a scatter plot of many points that separate into three different groups, we need to direct label the groups rather than the individual points. One solution is to draw ellipses that enclose the majority of the points and then label the ellipses (Figure \@ref(fig:iris-scatter-with-ellipses)).

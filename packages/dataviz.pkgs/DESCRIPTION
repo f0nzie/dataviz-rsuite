@@ -49,5 +49,6 @@ Imports: logging,
   rstanarm,
   gifski,
   transformr,
-  purrr
+  purrr,
+  psych
 RoxygenNote: 6.1.1

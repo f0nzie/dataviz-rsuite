@@ -138,7 +138,7 @@ While there are several good, cvd-safe color scales readily available, we need t
 </div>
 
 <div class="rmdtip">
-<p>To make sure your figures work for people with cvd, don't just rely on specific color scales. Instead, test your figures in a cvd simulator.</p>
+<p>To make sure your figures work for people with cvd, don’t just rely on specific color scales. Instead, test your figures in a cvd simulator.</p>
 </div>
 
 

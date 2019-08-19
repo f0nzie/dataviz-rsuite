@@ -276,7 +276,8 @@
 <p><img src="directory_of_visualizations_files/figure-html/proportions-comp-1.png" width="685.714285714286" style="display: block; margin: auto;" /></p>
 <p>When visualizing multiple sets of proportions or changes in proportions across conditions, pie charts tend to be space-inefficient and often obscure relationships. Grouped bars work well as long as the number of conditions compared is moderate, and stacked bars can work for large numbers of conditions. Stacked densities (Chapter <a href="visualizing-proportions.html#visualizing-proportions">10</a>) are appropriate when the proportions change along a continuous variable.</p>
 <p><img src="directory_of_visualizations_files/figure-html/proportions-multi-1.png" width="685.714285714286" style="display: block; margin: auto;" /></p>
-<p>When proportions are specified according to multiple grouping variables, then mosaic plots, treemaps, or parallel sets are useful visualization approaches (Chapter <a href="nested-proportions.html#nested-proportions">11</a>). Mosaic plots assume that every level of one grouping variable can be combined with every level of another grouping variable, whereas treemaps do not make such an assumption. Treemaps work well even if the subdivisions of one group are entirely distinct from the subdivisions of another. Parallel sets work better than either mosaic plots or treemaps when there are more than two grouping variables.</p>
+<p>When proportions are specified according to multiple grouping variables, then mosaic plots, treemaps, or parallel sets are useful visualization approaches
+(Chapter <a href="nested-proportions.html#nested-proportions">11</a>). Mosaic plots assume that every level of one grouping variable can be combined with every level of another grouping variable, whereas treemaps do not make such an assumption. Treemaps work well even if the subdivisions of one group are entirely distinct from the subdivisions of another. Parallel sets work better than either mosaic plots or treemaps when there are more than two grouping variables.</p>
 </div>
 <div id="xy-relationships" class="section level2">
 <h2><span class="header-section-number">5.4</span> <em>x</em>–<em>y</em> relationships</h2>
@@ -295,7 +296,8 @@
 <div id="directory-uncertainty" class="section level2">
 <h2><span class="header-section-number">5.6</span> Uncertainty</h2>
 <p><img src="directory_of_visualizations_files/figure-html/errorbars-1.png" width="685.714285714286" style="display: block; margin: auto;" /></p>
-<p>Error bars are meant to indicate the range of likely values for some estimate or measurement. They extend horizontally and/or vertically from some reference point representing the estimate or measurement (Chapter <a href="visualizing-uncertainty.html#visualizing-uncertainty">16</a>). Reference points can be shown in various ways, such as by dots or by bars. Graded error bars show multiple ranges at the same time, where each range corresponds to a different degree of confidence. They are in effect multiple error bars with different line thicknesses plotted on top of each other.</p>
+<p>Error bars are meant to indicate the range of likely values for some estimate or measurement. They extend horizontally and/or vertically from some reference point representing the estimate or measurement (Chapter <a href="visualizing-uncertainty.html#visualizing-uncertainty">16</a>). Reference points can be shown in various ways, such as by dots or by bars. Graded
+error bars show multiple ranges at the same time, where each range corresponds to a different degree of confidence. They are in effect multiple error bars with different line thicknesses plotted on top of each other.</p>
 <p><img src="directory_of_visualizations_files/figure-html/confidence-dists-1.png" width="685.714285714286" style="display: block; margin: auto;" /></p>
 <p>To achieve a more detailed visualization than is possible with error bars or graded error bars, we can visualize the actual confidence or posterior distributions (Chapter <a href="visualizing-uncertainty.html#visualizing-uncertainty">16</a>). Confidence strips provide a clear visual sense of uncertainty but are difficult to read accurately. Eyes and half-eyes combine error bars with approaches to visualize distributions (violins and ridgelines, respectively), and thus show both precise ranges for some confidence levels and the overall uncertainty distribution. A quantile dot plot can serve as an alternative visualization of an uncertainty distribution (Chapter <a href="visualizing-uncertainty.html#frequency-framing">16.1</a>). By showing the distribution in discrete units, the quantile dot plot is not as precise but can be easier to read than the continuous distribution shown by a violin or ridgeline plot.</p>
 <p><img src="directory_of_visualizations_files/figure-html/confidence-bands-1.png" width="685.714285714286" style="display: block; margin: auto;" /></p>
@@ -359,7 +361,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

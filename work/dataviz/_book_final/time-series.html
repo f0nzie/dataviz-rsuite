@@ -331,26 +331,26 @@ Figure 13.8: Dose–response curve showing the mean yield of oats varieties afte
 <p>Given the tools from the preceding subsections, we can visualize such data as two separate line graphs stacked on top of each other (Figure <a href="time-series.html#fig:house-price-unemploy">13.9</a>). This plot directly shows the two variables of interest, and it is straightforward to interpret. However, because the two variables are shown as separate line graphs, drawing comparisons between them can be cumbersome. If we want to identify temporal regions when both variables move in the same or in opposite directions, we need to switch back and forth between the two graphs and compare the relative slopes of the two curves.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:house-price-unemploy"></span>
-<img src="time_series_files/figure-html/house-price-unemploy-1.png" alt="12-month change in house prices (a) and unemployment rate (b) over time, from Jan. 2001 through Dec. 2017. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics." width="685.714285714286" />
+<img src="time_series_files/figure-html/house-price-unemploy-1.png" alt="12-month change in house prices (a) and unemployment rate (b) over time, from Jan. 2001 through Dec. 2017. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics." width="685.714285714286" />
 <p class="caption">
-Figure 13.9: 12-month change in house prices (a) and unemployment rate (b) over time, from Jan. 2001 through Dec. 2017. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics.
+Figure 13.9: 12-month change in house prices (a) and unemployment rate (b) over time, from Jan. 2001 through Dec. 2017. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics.
 </p>
 </div>
 <p>As an alternative to showing two separate line graphs, we can plot the two variables against each other, drawing a path that leads from the earliest time point to the latest (Figure <a href="time-series.html#fig:house-price-path">13.10</a>). Such a visualization is called a <em>connected scatter plot</em>, because we are technically making a scatter plot of the two variables against each other and then are connecting neighboring points. Physicists and engineers often call this a <em>phase portrait</em>, because in their disciplines it is commonly used to represent movement in phase space. We have previously encountered connected scatter plots in Chapter <a href="coordinate-systems-axes.html#coordinate-systems-axes">3</a>, where we plotted the daily temperature normals in Houston, TX, versus those in San Diego, CA (Figure <a href="coordinate-systems-axes.html#fig:temperature-normals-Houston-San-Diego">3.3</a>).</p>
 
 <div class="figure" style="text-align: center"><span id="fig:house-price-path"></span>
-<img src="time_series_files/figure-html/house-price-path-1.png" alt="12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017, shown as a connected scatter plot. Darker shades represent more recent months. The anti-correlation seen in Figure 13.9 between the change in house prices and the unemployment rate causes the connected scatter plot to form two counter-clockwise circles. Data sources: Freddie Mac House Price Index, U.S. Bureau of Labor Statistics. Original figure concept: Len Kiefer" width="576" />
+<img src="time_series_files/figure-html/house-price-path-1.png" alt="12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017, shown as a connected scatter plot. Darker shades represent more recent months. The anti-correlation seen in Figure 13.9 between the change in house prices and the unemployment rate causes the connected scatter plot to form two counter-clockwise circles. Data sources: Freddie Mac House Price Index, U.S. Bureau of Labor Statistics. Original figure concept: Len Kiefer" width="576" />
 <p class="caption">
-Figure 13.10: 12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017, shown as a connected scatter plot. Darker shades represent more recent months. The anti-correlation seen in Figure <a href="time-series.html#fig:house-price-unemploy">13.9</a> between the change in house prices and the unemployment rate causes the connected scatter plot to form two counter-clockwise circles. Data sources: Freddie Mac House Price Index, U.S. Bureau of Labor Statistics. Original figure concept: Len Kiefer
+Figure 13.10: 12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017, shown as a connected scatter plot. Darker shades represent more recent months. The anti-correlation seen in Figure <a href="time-series.html#fig:house-price-unemploy">13.9</a> between the change in house prices and the unemployment rate causes the connected scatter plot to form two counter-clockwise circles. Data sources: Freddie Mac House Price Index, U.S. Bureau of Labor Statistics. Original figure concept: Len Kiefer
 </p>
 </div>
 <p>In a connected scatter plot, lines going in the direction from the lower left to the upper right represent correlated movement between the two variables (as one variable grows, so does the other), and lines going in the perpendicular direction, from the upper left to the lower right, represent anti-correlated movement (as one variable grows, the other shrinks). If the two variables have a somewhat cyclic relationship, we will see circles or spirals in the connected scatter plot. In Figure <a href="time-series.html#fig:house-price-path">13.10</a>, we see one small circle from 2001 through 2005 and one large circle for the remainder of the time course.</p>
 <p>When drawing a connected scatter plot, it is important that we indicate both the direction and the temporal scale of the data. Without such hints, the plot can turn into meaningless scribble (Figure <a href="time-series.html#fig:house-price-path-bad">13.11</a>). I am using here (in Figure <a href="time-series.html#fig:house-price-path">13.10</a>) a gradual darkening of the color to indicate direction. Alternatively, one could draw arrows along the path.</p>
 
 <div class="figure" style="text-align: center"><span id="fig:house-price-path-bad"></span>
-<img src="time_series_files/figure-html/house-price-path-bad-1.png" alt="12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017. This figure is labeled “bad” because without the date markers and color shading of Figure 13.10, we can see neither the direction nor the speed of change in the data. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics." width="576" />
+<img src="time_series_files/figure-html/house-price-path-bad-1.png" alt="12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017. This figure is labeled “bad” because without the date markers and color shading of Figure 13.10, we can see neither the direction nor the speed of change in the data. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics." width="576" />
 <p class="caption">
-Figure 13.11: 12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017. This figure is labeled “bad” because without the date markers and color shading of Figure <a href="time-series.html#fig:house-price-path">13.10</a>, we can see neither the direction nor the speed of change in the data. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics.
+Figure 13.11: 12-month change in house prices versus unemployment rate, from Jan. 2001 through Dec. 2017. This figure is labeled “bad” because without the date markers and color shading of Figure <a href="time-series.html#fig:house-price-path">13.10</a>, we can see neither the direction nor the speed of change in the data. Data sources: Freddie Mac House Prices Index, U.S. Bureau of Labor Statistics.
 </p>
 </div>
 <p>Is it better to use a connected scatter plot or two separate line graphs? Separate line graphs tend to be easier to read, but once people are used to connected scatter plots they may be able to extract certain patterns (such as cyclical behavior with some irregularity) that can be difficult to spot in line graphs. In fact, to me the cyclical relationship between change in house prices and unemployment rate is hard to spot in Figure <a href="time-series.html#fig:house-price-unemploy">13.9</a>, but the counter-clockwise spiral in Figure <a href="time-series.html#fig:house-price-path">13.10</a> clearly shows it. Research reports that readers are more likely to confuse order and direction in a connected scatter plot than in line graphs and less likely to report correlation <span class="citation">(Haroz, Kosara, and Franconeri <a href="#ref-Haroz_et_al_2016">2016</a>)</span>. On the flip side, connected scatter plots seem to result in higher engagement, and thus such plots may be a effective tools to draw readers into a story <span class="citation">(Haroz, Kosara, and Franconeri <a href="#ref-Haroz_et_al_2016">2016</a>)</span>.</p>
@@ -370,10 +370,10 @@ Figure 13.12: Visualizing a high-dimensional time series as a connected scatter 
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-Haroz_et_al_2016">
-<p>Haroz, S., R. Kosara, and S. Franconeri. 2016. “The Connected Scatterplot for Presenting Paired Time Series.” <em>IEEE Transactions on Visualization and Computer Graphics</em> 22: 2174–86. doi:<a href="https://doi.org/10.1109/TVCG.2015.2502587">10.1109/TVCG.2015.2502587</a>.</p>
+<p>Haroz, S., R. Kosara, and S. Franconeri. 2016. “The Connected Scatterplot for Presenting Paired Time Series.” <em>IEEE Transactions on Visualization and Computer Graphics</em> 22: 2174–86. <a href="https://doi.org/10.1109/TVCG.2015.2502587" class="uri">https://doi.org/10.1109/TVCG.2015.2502587</a>.</p>
 </div>
 <div id="ref-Yates1935">
-<p>Yates, F. 1935. “Complex Experiments.” <em>Supplement to the Journal of the Royal Statistical Society</em> 2: 181–247. doi:<a href="https://doi.org/10.2307/2983638">10.2307/2983638</a>.</p>
+<p>Yates, F. 1935. “Complex Experiments.” <em>Supplement to the Journal of the Royal Statistical Society</em> 2: 181–247. <a href="https://doi.org/10.2307/2983638" class="uri">https://doi.org/10.2307/2983638</a>.</p>
 </div>
 </div>
             </section>
@@ -432,7 +432,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

@@ -285,40 +285,62 @@ Figure 2.1: Commonly used aesthetics in data visualization: position, shape, siz
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">quantitative/numerical continuous</td>
-<td align="left">1.3, 5.7, 83, 1.5x10<sup>-2</sup></td>
+<td align="left">quantitative/numerical
+continuous</td>
+<td align="left">1.3, 5.7, 83,
+1.5x10<sup>-2</sup></td>
 <td align="left">continuous</td>
-<td align="left">Arbitrary numerical values. These can be integers, rational numbers, or real numbers.</td>
+<td align="left">Arbitrary numerical values. These can be
+integers, rational numbers, or real numbers.</td>
 </tr>
 <tr class="even">
-<td align="left">quantitative/numerical discrete</td>
+<td align="left">quantitative/numerical
+discrete</td>
 <td align="left">1, 2, 3, 4</td>
 <td align="left">discrete</td>
-<td align="left">Numbers in discrete units. These are most commonly but not necessarily integers. For example, the numbers 0.5, 1.0, 1.5 could also be treated as discrete if intermediate values cannot exist in the given dataset.</td>
+<td align="left">Numbers in discrete units. These are most
+commonly but not necessarily integers.
+For example, the numbers 0.5, 1.0, 1.5 could
+also be treated as discrete if intermediate
+values cannot exist in the given dataset.</td>
 </tr>
 <tr class="odd">
-<td align="left">qualitative/categorical unordered</td>
+<td align="left">qualitative/categorical
+unordered</td>
 <td align="left">dog, cat, fish</td>
 <td align="left">discrete</td>
-<td align="left">Categories without order. These are discrete and unique categories that have no inherent order. These variables are also called <em>factors</em>.</td>
+<td align="left">Categories without order. These are discrete
+and unique categories that have no inherent
+order. These variables are
+also called <em>factors</em>.</td>
 </tr>
 <tr class="even">
-<td align="left">qualitative/categorical ordered</td>
+<td align="left">qualitative/categorical
+ordered</td>
 <td align="left">good, fair, poor</td>
 <td align="left">discrete</td>
-<td align="left">Categories with order. These are discrete and unique categories with an order. For example, “fair” always lies between “good” and “poor”. These variables are also called <em>ordered factors</em>.</td>
+<td align="left">Categories with order. These are discrete
+and unique categories with an order. For
+example, “fair” always lies between “good”
+and “poor”. These variables are
+also called <em>ordered factors</em>.</td>
 </tr>
 <tr class="odd">
 <td align="left">date or time</td>
-<td align="left">Jan. 5 2018, 8:03am</td>
+<td align="left">Jan. 5 2018, 8:03am</td>
 <td align="left">continuous or discrete</td>
-<td align="left">Specific days and/or times. Also generic dates, such as July 4 or Dec. 25 (without year).</td>
+<td align="left">Specific days and/or times. Also
+generic dates, such as July 4 or Dec. 25
+(without year).</td>
 </tr>
 <tr class="even">
 <td align="left">text</td>
-<td align="left">The quick brown fox jumps over the lazy dog.</td>
+<td align="left">The quick brown fox
+jumps over the lazy
+dog.</td>
 <td align="left">none, or discrete</td>
-<td align="left">Free-form text. Can be treated as categorical if needed.</td>
+<td align="left">Free-form text. Can be treated
+as categorical if needed.</td>
 </tr>
 </tbody>
 </table>
@@ -432,7 +454,8 @@ Figure 2.1: Commonly used aesthetics in data visualization: position, shape, siz
 Figure 2.2: Scales link data values to aesthetics. Here, the numbers 1 through 4 have been mapped onto a position scale, a shape scale, and a color scale. For each scale, each number corresponds to a unique position, shape, or color and vice versa.
 </p>
 </div>
-<p>Let’s put things into practice. We can take the dataset shown in Table <a href="aesthetic-mapping.html#tab:data-example">2.2</a>, map temperature onto the <em>y</em> axis, day of the year onto the <em>x</em> axis, location onto color, and visualize these aesthetics with solid lines. The result is a standard line plot showing the temperature normals at the four locations as they change during the year (Figure <a href="aesthetic-mapping.html#fig:temp-normals-vs-time">2.3</a>).</p>
+<p>Let’s put things into practice. We can take the dataset shown in Table <a href="aesthetic-mapping.html#tab:data-example">2.2</a>, map temperature onto the <em>y</em> axis, day of the year onto the <em>x</em> axis, location onto color, and visualize these aesthetics with solid lines. The result is a standard line plot showing the temperature normals at the four locations as they change during the year (Figure
+<a href="aesthetic-mapping.html#fig:temp-normals-vs-time">2.3</a>).</p>
 
 <div class="figure" style="text-align: center"><span id="fig:temp-normals-vs-time"></span>
 <img src="aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" alt="Daily temperature normals for four selected locations in the U.S. Temperature is mapped to the y axis, day of the year to the x axis, and location to line color. Data source: NOAA." width="576" />
@@ -522,7 +545,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "";
+    var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

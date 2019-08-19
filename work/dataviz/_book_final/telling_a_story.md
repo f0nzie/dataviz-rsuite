@@ -76,7 +76,7 @@ I think the most important feature of Figure \@ref(fig:arrival-delay-vs-distance
 
 
 <div class="rmdtip">
-<p>When you're trying to show too much data at once you may end up not showing anything.</p>
+<p>When you’re trying to show too much data at once you may end up not showing anything.</p>
 </div>
 
 

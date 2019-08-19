@@ -74,11 +74,19 @@ Because `rsuite` allows a supervising project on top of other projects or packag
 * Clone or download the ebook [repository](https://github.com/f0nzie/dataviz-rsuite)
 * Change to this repo folder and install the dependencies on its own isolated reproducible environment. Use `rsuite proj depsinst`
 * Build the project with `rsuite proj build`
+
 * In the terminal type this:
 
 ```
 dataviz-rsuite$  Rscript R/build_final.R
 ```
+
+for the final version of the book.
+
+> Warning. Do not build through RStudio. It will stop because of this error:
+`Quitting from lines 13365-13460 (_main.Rmd). Error: $ operator is invalid for atomic vectors`.
+
+
 
 Or this:
 

@@ -381,7 +381,7 @@ $(document).ready(function () {
 <h1>dataviz-rsuite</h1>
 <div id="ebook-built-with-rsuite.-how-is-this-different" class="section level2">
 <h2>ebook built with <code>rsuite</code>. How is this different</h2>
-<p>This bookdown ebook <a href="https://www.amazon.com/gp/product/1492031089"><strong>Fundamentals of Data Visualization</strong></a> was originally created with <code>bookdown</code> by its author <a href="@ClausWilke">Claus Wilke</a>. The version here is different in the way it has been built, and can be rebuilt, even from the bare metal.</p>
+<p>This bookdown ebook <a href="https://www.amazon.com/gp/product/1492031089"><strong>Fundamentals of Data Visualization</strong></a> was originally created with <code>bookdown</code> by its author <a href="@ClausWilke">Claus Wilke</a>. The version here is different in the way it has been built, and can be rebuilt, even from the bare metal. The focus is <strong>reproducibility</strong>.</p>
 <p>I have used <code>rsuite</code> to make it fully reproducible and easier to knit. This ebook is, in some way, difficult to match or keep all the dependencies. Some packages will not be found in <a href>CRAN</a>, or have newer versions in Github. To save all the package installation in the R global environment, I have chosen to create the book in an isolated environment with rsuite. Besides, since not all good things last forever, after a package upgrade the ebook may stop building. These are all the packages required to build this ebook:</p>
 <pre><code>  logging,
   bookdown,
@@ -424,7 +424,8 @@ $(document).ready(function () {
   lwgeom,
   rstanarm,
   gifski,
-  transformr</code></pre>
+  transformr,
+  purrr</code></pre>
 </div>
 <div id="how-is-it-done" class="section level2">
 <h2>How is it done</h2>
@@ -447,10 +448,14 @@ $(document).ready(function () {
 <li>Install the rsuite package with <code>rsuite install</code></li>
 <li>Clone or download the ebook <a href="https://github.com/f0nzie/dataviz-rsuite">repository</a></li>
 <li>Change to this repo folder and install the dependencies on its own isolated reproducible environment. Use <code>rsuite proj depsinst</code></li>
-<li>Build the project with <code>rsuite proj build</code></li>
-<li>In the terminal type this:</li>
+<li><p>Build the project with <code>rsuite proj build</code></p></li>
+<li><p>In the terminal type this:</p></li>
 </ul>
 <pre><code>dataviz-rsuite$  Rscript R/build_final.R</code></pre>
+<p>for the final version of the book.</p>
+<blockquote>
+<p>Warning. Do not build through RStudio. It will stop because of this error: <code>Quitting from lines 13365-13460 (_main.Rmd). Error: $ operator is invalid for atomic vectors</code>.</p>
+</blockquote>
 <p>Or this:</p>
 <pre><code>dataviz-rsuite$  Rscript R/build_draft.R</code></pre>
 <ul>

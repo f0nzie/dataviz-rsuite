@@ -2,7 +2,7 @@
 
 
 ## ebook built with `rsuite`. How is this different
-This bookdown ebook [**Fundamentals of Data Visualization**](https://www.amazon.com/gp/product/1492031089) was originally created with `bookdown` by its author [Claus Wilke](@ClausWilke). The version here is different in the way it has been built, and can be rebuilt, even from the bare metal.
+This bookdown ebook [**Fundamentals of Data Visualization**](https://www.amazon.com/gp/product/1492031089) was originally created with `bookdown` by its author [Claus Wilke](@ClausWilke). The version here is different in the way it has been built, and can be rebuilt, even from the bare metal. The focus is **reproducibility**.
 
 I have used `rsuite` to make it fully reproducible and easier to knit. This ebook is, in some way, difficult to match or keep all the dependencies. Some packages will not be found in [CRAN](), or have newer versions in Github. To save all the package installation in the R global environment, I have chosen to create the book in an isolated environment with rsuite.
 Besides, since not all good things last forever, after a package upgrade the ebook may stop building. These are all the packages required to build this ebook:
@@ -49,7 +49,8 @@ Besides, since not all good things last forever, after a package upgrade the ebo
   lwgeom,
   rstanarm,
   gifski,
-  transformr
+  transformr,
+  purrr
 ```  
 
 ## How is it done
